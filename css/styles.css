@@ -1,5 +1,79 @@
-h3,
-p {
-    background-color: red;
+/*Import fonts*/
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap);
 
+/*Color variables*/
+:root {
+    --blue: #2196F3;
+    --black: #000000;
+    --white: #FFFFFF;
+    --dark-section: #2F303A;
+    --gray-section: #F5F4FA;
+    --dark-title: #212121;
+    --dark-text: #757575;
+    --white-background: #f5f5f5;
+}
+
+/*Видалити крапку зі списків*/
+ul {
+    list-style-type: none;
+}
+
+/*Body*/
+body {
+    font-family: 'Roboto';
+}
+
+/*Фокус*/
+.focus:hover,
+:focus {
+    color: var(--blue);
+}
+
+.focus:visited {}
+
+/*Logo*/
+.logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+}
+
+.logo-1 {
+    color: var(--blue);
+}
+
+.logo-2-header {
+    color: var(--black);
+}
+
+.logo-2-footer {
+    color: var(--white);
+}
+
+/*Navigate*/
+.navigate {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.navigate-item {
+    color: var(--dark-title);
+}
+
+.contacts {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--dark-text);
+}
+
+.contacts-item {
+    color: var(--dark-text);
 }
