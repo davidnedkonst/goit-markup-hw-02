@@ -1,79 +1,179 @@
-/*Import fonts*/
+/*Import google fonts*/
 @import url(https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap);
 
-/*Color variables*/
-:root {
-    --blue: #2196F3;
-    --black: #000000;
-    --white: #FFFFFF;
-    --dark-section: #2F303A;
-    --gray-section: #F5F4FA;
-    --dark-title: #212121;
-    --dark-text: #757575;
-    --white-background: #f5f5f5;
-}
+/*Header*/
+.header {}
 
-/*Видалити крапку зі списків*/
-ul {
-    list-style-type: none;
-}
+.header-container {}
 
-/*Body*/
-body {
-    font-family: 'Roboto';
-}
+.header-navigate {}
 
-/*Фокус*/
-.focus:hover,
-:focus {
-    color: var(--blue);
-}
-
-.focus:visited {}
-
-/*Logo*/
 .logo {
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: calc(31/26);
     letter-spacing: 0.03em;
 }
 
-.logo-1 {
-    color: var(--blue);
-}
+.logo-1 {}
 
-.logo-2-header {
-    color: var(--black);
-}
+.logo-2-header {}
 
-.logo-2-footer {
-    color: var(--white);
-}
+.header-navigate-menu {}
 
-/*Navigate*/
-.navigate {
-    font-style: normal;
+.header-navigate-menu-item {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
-}
-
-.navigate-item {
-    color: var(--dark-title);
-}
-
-.contacts {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
+    line-height: calc(16/14);
     letter-spacing: 0.02em;
-    color: var(--dark-text);
 }
 
-.contacts-item {
-    color: var(--dark-text);
+.header-address {}
+
+.header-address-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
 }
+
+/*Main*/
+/*Main-section1*/
+.main-section1 {}
+
+.main-section1-container {}
+
+.main-section1-h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60/44);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.main-section1-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    letter-spacing: 0.06em;
+}
+
+/*Main-section2*/
+.main-section2 {}
+
+.main-section2-container {}
+
+.main-section2-list {}
+
+.main-section2-list-item {}
+
+.main-section2-list-item-h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.main-section2-list-item-p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+}
+
+/*Main-section3*/
+.main-section3 {}
+
+.main-section3-container {}
+
+.main-section3-h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    letter-spacing: 0.03em;
+}
+
+.main-section3-list {}
+
+.main-section3-list-item {}
+
+/*Main-section4*/
+.main-section4 {}
+
+.main-section4-container {}
+
+.main-section4-h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    letter-spacing: 0.03em;
+}
+
+.main-section4-list {}
+
+.main-section4-list-item {}
+
+.main-section4-list-item-h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19/16);
+    letter-spacing: 0.03em;
+}
+
+.main-section4-list-item-p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19/16);
+    letter-spacing: 0.03em;
+}
+
+/*Footer*/
+.logo-2-footer {}
+
+.footer-address-list {}
+
+.footer-address-list-address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+}
+
+.footer-address-list-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+}
+
+/*Portfolio*/
+/*Main*/
+/*Main-section1*/
+.portfolio-main-section1 {}
+
+.container {}
+
+.portfolio-main-section1-container {}
+
+.portfolio-main-section1-list {}
+
+.portfolio-main-section1-list-button {}
+
+.focus2 {}
+
+/*Main-section2*/
+.portfolio-main-section2 {}
+
+.container {}
+
+.portfolio-main-section2-container {}
+
+.portfolio-main-section2-list {}
+
+.portfolio-main-section2-list-item {}
+
+.portfolio-main-section2-list-item-h3 {}
+
+.portfolio-main-section2-list-item-p {}
