@@ -19,7 +19,8 @@
 
 .focus2:hover,
 :focus {
-
+    background-color: var(--blue);
+    color: var(--white);
 }
 
 .header {
@@ -48,8 +49,6 @@
 .header-navigate-menu-item {
     color: var(--dark-title);
 }
-
-.focus1 {}
 
 .header-address {}
 
@@ -161,20 +160,16 @@
 /*Main-section1*/
 .portfolio-main-section1 {}
 
-.container {}
-
 .portfolio-main-section1-container {}
 
 .portfolio-main-section1-list {}
 
-.portfolio-main-section1-list-button {}
-
-.focus2 {}
+.portfolio-main-section1-list-button {
+    background-color: var(--gray-section);
+}
 
 /*Main-section2*/
 .portfolio-main-section2 {}
-
-.container {}
 
 .portfolio-main-section2-container {}
 

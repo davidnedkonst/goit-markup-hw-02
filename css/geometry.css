@@ -203,6 +203,10 @@ footer {
 
 .portfolio-main-section2-list-item {}
 
+.portfolio-main-section2-list-item-figure{
+    margin: 0;
+}
+
 .portfolio-main-section2-list-item-figure-img{
     width: 370px;
 }

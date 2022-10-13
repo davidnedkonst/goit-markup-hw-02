@@ -153,20 +153,19 @@
 /*Main-section1*/
 .portfolio-main-section1 {}
 
-.container {}
-
 .portfolio-main-section1-container {}
 
 .portfolio-main-section1-list {}
 
-.portfolio-main-section1-list-button {}
-
-.focus2 {}
+.portfolio-main-section1-list-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26/16);
+    letter-spacing: 0.03em;
+}
 
 /*Main-section2*/
 .portfolio-main-section2 {}
-
-.container {}
 
 .portfolio-main-section2-container {}
 
