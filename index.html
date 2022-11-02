@@ -6,135 +6,375 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Головна</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/geometry.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/color.css">
+    <link rel="stylesheet" href="./css/common.css">
 </head>
 
 <body>
     <header class="header">
         <div class="container header-container">
-            <nav>
-                <div class="header-navigate">
-                    <a class="logo" href="./index.html">
-                        <span class="logo-1">Web</span>
-                        <span class="logo-2-header">Studio</span>
-                    </a>
+            <nav class="header-navigate">
+                <a class="logo" href="./index.html">
+                    <span class="logo-1">Web</span>
+                    <span class="logo-2-header">Studio</span>
+                </a>
 
-                    <ul class="header-navigate-menu">
-                        <li><a class="header-navigate-menu-item focus1" href="./index.html">Студія</a></li>
-                        <li><a class="header-navigate-menu-item focus1" href="./portfolio.html">Портфоліо</a></li>
-                        <li><a class="header-navigate-menu-item focus1" href="#footer">Контакти</a></li>
-                    </ul>
-                </div>
+                <ul class="header-navigate-menu">
+                    <li><a class="header-navigate-menu-item focus1" href="./index.html">Студія</a></li>
+                    <li><a class="header-navigate-menu-item focus1" href="./portfolio.html">Портфоліо</a></li>
+                    <li><a class="header-navigate-menu-item focus1" href="#footer">Контакти</a></li>
+                </ul>
             </nav>
 
             <address>
                 <ul class="header-address">
-                    <li><a class="header-address-item focus1" href="mailto:info.devstudio.com">info.devstudio.com</a>
+                    <li class="header-address-item">
+                        <a class="header-address-item-link focus1" href="mailto:info.devstudio.com">
+                            <svg class="header-address-item-link-icon" width="16px" height="12px">
+                                <use href="./images/icon-phone-mail.svg#icon-mail"></use>
+                            </svg>
+                            info.devstudio.com
+                        </a>
                     </li>
-                    <li><a class="header-address-item focus1" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    <li class="header-address-item">
+                        <a class="header-address-item-link focus1" href="tel:+380961111111">
+                            <svg class="header-address-item-link-icon" width="10px" height="16px">
+                                <use href="./images/icon-phone-mail.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
                 </ul>
             </address>
         </div>
     </header>
 
     <main>
-        <section class="main-section1">
-            <div class="container main-section1-container">
-                <h1 class="main-section1-h1">ефективі рішення для<br>вашого бізнесу</h1>
-                <button class="main-section1-button" type="button">Замовити послугу</button>
+        <section class="section1">
+            <div class="container section1-container">
+                <h1 class="section1-h1">ефективі рішення для<br>вашого бізнесу</h1>
+                <button class="section1-button" type="button">Замовити послугу</button>
             </div>
         </section>
 
-        <section class="main-section2">
-            <div class="container main-section2-container">
-                <ul class="main-section2-list">
-                    <li class="main-section2-list-item">
-                        <h3 class="main-section2-list-item-h3">увага до деталей</h3>
-                        <p class="main-section2-list-item-p">Ідейні міркування, і навіть початок повсякденної роботи з
-                            формування позиції.</p>
+        <section class="section2">
+            <div class="container">
+                <ul class="section2-list">
+                    <li class="section2-list-item">
+                        <div class="section2-list-item-div1">
+                            <h3 class="section2-list-item-h3">увага до деталей</h3>
+                            <p class="section2-list-item-p">
+                                Ідейні міркування, і навіть початок повсякденної роботи з
+                                формування позиції.
+                            </p>
+                        </div>
                     </li>
-                    <li class="main-section2-list-item">
-                        <h3 class="main-section2-list-item-h3">пунктуальнісь</h3>
-                        <p class="main-section2-list-item-p">Завдання організації, особливо рамки і місце навчання
-                            кадрів тягне у себе.</p>
+                    <li class="section2-list-item">
+                        <div class="section2-list-item-div2">
+                            <h3 class="section2-list-item-h3">пунктуальнісь</h3>
+                            <p class="section2-list-item-p">
+                                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+                            </p>
+                        </div>
                     </li>
-                    <li class="main-section2-list-item">
-                        <h3 class="main-section2-list-item-h3">планування</h3>
-                        <p class="main-section2-list-item-p">Так само консультація з широким активом значною мірою
-                            зумовлює.</p>
+                    <li class="section2-list-item">
+                        <div class="section2-list-item-div3">
+                            <h3 class="section2-list-item-h3">планування</h3>
+                            <p class="section2-list-item-p">
+                                Так само консультація з широким активом значною мірою зумовлює.
+                            </p>
+                        </div>
                     </li>
-                    <li class="main-section2-list-item">
-                        <h3 class="main-section2-list-item-h3">сучасні технології</h3>
-                        <p class="main-section2-list-item-p">Значимість цих проблем настільки очевидна, що реалізація
-                            планових завдань.</p>
+                    <li class="section2-list-item">
+                        <div class="section2-list-item-div4">
+                            <h3 class="section2-list-item-h3">сучасні технології</h3>
+                            <p class="section2-list-item-p">
+                                Значимість цих проблем настільки очевидна, що реалізація
+                                планових завдань.
+                            </p>
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
 
-        <section class="main-section3">
-            <div class="container main-section3-container">
-                <h2 class="main-section3-h2">Чим ми займаємося</h2>
-                <ul class="main-section3-list">
+        <section class="section3">
+            <div class="container">
+                <h2 class="section3-h2">Чим ми займаємося</h2>
+                <ul class="section3-list">
                     <li>
                         <img src="./images/img0.jpg" alt="Програмування" width="370px">
                     </li>
-                    <li class="main-section3-list-item">
+                    <li class="section3-list-item">
                         <img src="./images/img1.jpg" alt="Розробка мобільних додатків" width="370px">
                     </li>
-                    <li class="main-section3-list-item">
+                    <li class="section3-list-item">
                         <img src="./images/img2.jpg" alt="Дизайн" width="370px">
                     </li>
                 </ul>
             </div>
         </section>
 
-        <section class="main-section4">
-            <div class="container main-section4-container">
-                <h2 class="main-section4-h2">Наша команда</h2>
-                <ul class="main-section4-list">
-                    <li class="main-section4-list-item">
-                        <figure class="main-section4-list-item-figure">
-                            <img class="main-section4-list-item-figure-img" src="./images/photo0.jpg"
+        <section class="section4">
+            <div class="container">
+                <h2 class="section3-h2">Наша команда</h2>
+                <ul class="section4-list">
+                    <li class="section4-list-item">
+                        <figure class="section4-list-item-figure">
+                            <img class="section4-list-item-figure-img" src="./images/photo0.jpg"
                                 alt="Фото продукт-дизайнера">
-                            <figcaption class="main-section4-list-item-figurecaption">
-                                <h3 class="main-section4-list-item-h3">Ігор Дем'яненко</h3>
-                                <p class="main-section4-list-item-p">Product Designer</p>
+                            <figcaption class="section4-list-item-figurecaption">
+                                <div>
+                                    <h3 class="section4-list-item-h3">Ігор Дем'яненко</h3>
+                                    <p class="section4-list-item-p">Product Designer</p>
+                                </div>
+                                <div>
+                                    <ul class="section4-link-list">
+                                        <li class="section4-link-list-item">
+                                            <div class="section4-link-list-item-div section4-focus-background">
+                                                <a href="" class="section4-link-list-item-a">
+                                                    <svg class="section4-link-list-item-a-icon section4-focus-icon">
+                                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="section4-link-list-item">
+                                            <div class="section4-link-list-item-div section4-focus-background">
+                                                <a href="" class="section4-link-list-item-a">
+                                                    <svg class="section4-link-list-item-a-icon section4-focus-icon">
+                                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="section4-link-list-item">
+                                            <div class="section4-link-list-item-div section4-focus-background">
+                                                <a href="" class="section4-link-list-item-a">
+                                                    <svg class="section4-link-list-item-a-icon section4-focus-icon">
+                                                        <use href="./images/icons.svg#icon-linkedin"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="section4-link-list-item">
+                                            <div class="section4-link-list-item-div section4-focus-background">
+                                                <a href="" class="section4-link-list-item-a">
+                                                    <svg class="section4-link-list-item-a-icon section4-focus-icon">
+                                                        <use href="./images/icons.svg#icon-twitter"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </figcaption>
                         </figure>
                     </li>
-                    <li class="main-section4-list-item">
-                        <figure class="main-section4-list-item-figure">
-                            <img class="main-section4-list-item-figure-img" src="./images/photo1.jpg"
+                    <li class="section4-list-item">
+                        <figure class="section4-list-item-figure">
+                            <img class="section4-list-item-figure-img" src="./images/photo1.jpg"
                                 alt="Фото фронт-енд розробника" width="270px">
-                            <figcaption class="main-section4-list-item-figurecaption">
-                                <h3 class="main-section4-list-item-h3">Ольга Рєпіна</h3>
-                                <p class="main-section4-list-item-p">Frontend Developer</p>
+                            <figcaption class="section4-list-item-figurecaption">
+                                <div>
+                                    <h3 class="section4-list-item-h3">Ольга Рєпіна</h3>
+                                    <p class="section4-list-item-p">Frontend Developer</p>
+                                </div>
+                                <div>
+                                    <ul class="section4-link-list">
+                                        <li class="section4-link-list-item">
+                                            <div class="section4-link-list-item-div section4-focus-background">
+                                                <a href="" class="section4-link-list-item-a">
+                                                    <svg class="section4-link-list-item-a-icon section4-focus-icon">
+                                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="section4-link-list-item">
+                                            <div class="section4-link-list-item-div section4-focus-background">
+                                                <a href="" class="section4-link-list-item-a">
+                                                    <svg class="section4-link-list-item-a-icon section4-focus-icon">
+                                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="section4-link-list-item">
+                                            <div class="section4-link-list-item-div section4-focus-background">
+                                                <a href="" class="section4-link-list-item-a">
+                                                    <svg class="section4-link-list-item-a-icon section4-focus-icon">
+                                                        <use href="./images/icons.svg#icon-linkedin"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="section4-link-list-item">
+                                            <div class="section4-link-list-item-div section4-focus-background">
+                                                <a href="" class="section4-link-list-item-a">
+                                                    <svg class="section4-link-list-item-a-icon section4-focus-icon">
+                                                        <use href="./images/icons.svg#icon-twitter"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </figcaption>
                         </figure>
                     </li>
-                    <li class="main-section4-list-item">
-                        <figure class="main-section4-list-item-figure">
-                            <img class="main-section4-list-item-figure-img" src="./images/photo2.jpg"
-                                alt="Фото маркетолога" width="270px">
-                            <figcaption class="main-section4-list-item-figurecaption">
-                                <h3 class="main-section4-list-item-h3">Микола Тарасов</h3>
-                                <p class="main-section4-list-item-p">Marketing</p>
+                    <li class="section4-list-item">
+                        <figure class="section4-list-item-figure">
+                            <img class="section4-list-item-figure-img" src="./images/photo2.jpg" alt="Фото маркетолога"
+                                width="270px">
+                            <figcaption class="section4-list-item-figurecaption">
+                                <div>
+                                    <h3 class="section4-list-item-h3">Микола Тарасов</h3>
+                                    <p class="section4-list-item-p">Marketing</p>
+                                </div>
+                                <div>
+                                    <ul class="section4-link-list">
+                                        <li class="section4-link-list-item">
+                                            <div class="section4-link-list-item-div section4-focus-background">
+                                                <a href="" class="section4-link-list-item-a">
+                                                    <svg class="section4-link-list-item-a-icon section4-focus-icon">
+                                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="section4-link-list-item">
+                                            <div class="section4-link-list-item-div section4-focus-background">
+                                                <a href="" class="section4-link-list-item-a">
+                                                    <svg class="section4-link-list-item-a-icon section4-focus-icon">
+                                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="section4-link-list-item">
+                                            <div class="section4-link-list-item-div section4-focus-background">
+                                                <a href="" class="section4-link-list-item-a">
+                                                    <svg class="section4-link-list-item-a-icon section4-focus-icon">
+                                                        <use href="./images/icons.svg#icon-linkedin"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="section4-link-list-item">
+                                            <div class="section4-link-list-item-div section4-focus-background">
+                                                <a href="" class="section4-link-list-item-a">
+                                                    <svg class="section4-link-list-item-a-icon section4-focus-icon">
+                                                        <use href="./images/icons.svg#icon-twitter"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </figcaption>
                         </figure>
                     </li>
-                    <li class="main-section4-list-item">
-                        <figure class="main-section4-list-item-figure">
-                            <img class="main-section4-list-item-figure-img" src="./images/photo3.jpg"
-                                alt="Фото ЮІ-дизайнера" width="270px">
-                            <figcaption class="main-section4-list-item-figurecaption">
-                                <h3 class="main-section4-list-item-h3">Михайло Єрмаков</h3>
-                                <p class="main-section4-list-item-p">UI Designer</p>
+                    <li class="section4-list-item">
+                        <figure class="section4-list-item-figure">
+                            <img class="section4-list-item-figure-img" src="./images/photo3.jpg" alt="Фото ЮІ-дизайнера"
+                                width="270px">
+                            <figcaption class="section4-list-item-figurecaption">
+                                <div>
+                                    <h3 class="section4-list-item-h3">Михайло Єрмаков</h3>
+                                    <p class="section4-list-item-p">UI Designer</p>
+                                </div>
+                                <div>
+                                    <ul class="section4-link-list">
+                                        <li class="section4-link-list-item">
+                                            <div class="section4-link-list-item-div section4-focus-background">
+                                                <a href="" class="section4-link-list-item-a">
+                                                    <svg class="section4-link-list-item-a-icon section4-focus-icon">
+                                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="section4-link-list-item">
+                                            <div class="section4-link-list-item-div section4-focus-background">
+                                                <a href="" class="section4-link-list-item-a">
+                                                    <svg class="section4-link-list-item-a-icon section4-focus-icon">
+                                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="section4-link-list-item">
+                                            <div class="section4-link-list-item-div section4-focus-background">
+                                                <a href="" class="section4-link-list-item-a">
+                                                    <svg class="section4-link-list-item-a-icon section4-focus-icon">
+                                                        <use href="./images/icons.svg#icon-linkedin"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="section4-link-list-item">
+                                            <div class="section4-link-list-item-div section4-focus-background">
+                                                <a href="" class="section4-link-list-item-a">
+                                                    <svg class="section4-link-list-item-a-icon section4-focus-icon">
+                                                        <use href="./images/icons.svg#icon-twitter"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </figcaption>
                         </figure>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section5">
+            <div class="container">
+                <h2 class="section3-h2">Постійні клієнти</h2>
+                <ul class="setion5-list">
+                    <li class="setion5-list-item">
+                        <a href="" class="section5-list-item-a section5-focus-border">
+                            <svg class="section5-list-item-a-icon section5-focus-icon">
+                                <use href="./images/icons-clients.svg#icon-client1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="setion5-list-item">
+                        <a href="" class="section5-list-item-a section5-focus-border">
+                            <svg class="section5-list-item-a-icon section5-focus-icon">
+                                <use href="./images/icons-clients.svg#icon-client2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="setion5-list-item">
+                        <a href="" class="section5-list-item-a section5-focus-border">
+                            <svg class="section5-list-item-a-icon section5-focus-icon">
+                                <use href="./images/icons-clients.svg#icon-client3"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="setion5-list-item">
+                        <a href="" class="section5-list-item-a section5-focus-border">
+                            <svg class="section5-list-item-a-icon section5-focus-icon">
+                                <use href="./images/icons-clients.svg#icon-client4"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="setion5-list-item">
+                        <a href="" class="section5-list-item-a section5-focus-border">
+                            <svg class="section5-list-item-a-icon section5-focus-icon">
+                                <use href="./images/icons-clients.svg#icon-client5"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="setion5-list-item">
+                        <a href="" class="section5-list-item-a section5-focus-border">
+                            <svg class="section5-list-item-a-icon section5-focus-icon">
+                                <use href="./images/icons-clients.svg#icon-client6"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -142,33 +382,77 @@
     </main>
 
     <footer id="footer" class="footer">
-        <div class="container">
-            <a href="./index.html">
-                <p class="logo">
-                    <span class="logo-1">Web</span>
-                    <span class="logo-2-footer">Studio</span>
-                </p>
-            </a>
+        <div class="container footer-container">
+            <div class="footer-container-left">
+                <a href="./index.html">
+                    <p class="logo">
+                        <span class="logo-1">Web</span>
+                        <span class="logo-2-footer">Studio</span>
+                    </p>
+                </a>
 
-            <address>
-                <ul class="footer-address-list">
-                    <li>
-                        <a class="footer-address-list-address focus1" href="https://goo.gl/maps/pQFuVmgAhRDfWts1A">
-                            м. Київ, пр-т Лесі Українки, 26
-                        </a>
+                <address>
+                    <ul class="footer-address-list">
+                        <li>
+                            <a class="footer-address-list-address focus1" href="https://goo.gl/maps/pQFuVmgAhRDfWts1A">
+                                м. Київ, пр-т Лесі Українки, 26
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer-address-list-item focus1" href="mailto:info.devstudio.com">
+                                info.devstudio.com
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer-address-list-item focus1" a href="tel:+380961111111">
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+
+            <div class="footer-link">
+                <h3 class="footer-link-h3">приєднуйтесь</h3>
+                <ul class="footer-link-list">
+                    <li class="footer-link-list-item">
+                        <div class="footer-link-list-item-div footer-focus-background">
+                            <a href="" class="footer-link-list-item-a">
+                                <svg class="footer-link-list-item-a-icon">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </div>
                     </li>
-                    <li>
-                        <a class="footer-address-list-item focus1" href="mailto:info.devstudio.com">
-                            info.devstudio.com
-                        </a>
+                    <li class="footer-link-list-item">
+                        <div class="footer-link-list-item-div footer-focus-background">
+                            <a href="" class="footer-link-list-item-a">
+                                <svg class="footer-link-list-item-a-icon">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </div>
                     </li>
-                    <li>
-                        <a class="footer-address-list-item focus1" a href="tel:+380961111111">
-                            +38 096 111 11 11
-                        </a>
+                    <li class="footer-link-list-item">
+                        <div class="footer-link-list-item-div footer-focus-background">
+                            <a href="" class="footer-link-list-item-a">
+                                <svg class="footer-link-list-item-a-icon">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="footer-link-list-item">
+                        <div class="footer-link-list-item-div footer-focus-background">
+                            <a href="" class="footer-link-list-item-a">
+                                <svg class="footer-link-list-item-a-icon">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </div>
                     </li>
                 </ul>
-            </address>
+            </div>
         </div>
     </footer>
 </body>
