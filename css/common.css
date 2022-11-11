@@ -16,6 +16,11 @@
     --gray2-border: #AFB1B8;
     --gray3-backgroung: rgba(255, 255, 255, 0.1);
     --gray4-icon: #AFB1B8;
+    --section3-background: rgba(47, 48, 58, 0.8);
+
+    --time1: 2500ms;
+    --time2: 2s;
+    --transitionfunction1: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*----------Головні настройки----------*/
@@ -83,14 +88,26 @@ address {
 }
 
 /*Фокус*/
+.focus1 {
+    transition-property: color;
+    transition-duration: var(--time1);
+    transition-timing-function: var(--transitionfunction1);
+}
+
 .focus1:hover,
 .focus1:focus {
     color: var(--blue);
 }
 
 .focus1:hover .header-address-item-link-icon,
-.focus1:focus .header-address-item-link-icon{
+.focus1:focus .header-address-item-link-icon {
     fill: var(--blue);
+}
+
+.focus2 {
+    transition-property: background-color, color;
+    transition-duration: var(--time1);
+    transition-timing-function: var(--transitionfunction1);
 }
 
 .focus2:hover,
@@ -99,9 +116,21 @@ address {
     color: var(--white);
 }
 
+.section4-focus-background {
+    transition-property: background-color;
+    transition-duration: var(--time1);
+    transition-timing-function: var(--transitionfunction1);
+}
+
 .section4-focus-background:hover,
 .section4-focus-background:focus {
     background-color: var(--blue);
+}
+
+.section4-focus-icon {
+    transition: fill;
+    transition-duration: var(--time1);
+    transition-timing-function: var(--transitionfunction1);
 }
 
 .section4-focus-background:hover .section4-focus-icon,
@@ -109,14 +138,32 @@ address {
     fill: var(--white);
 }
 
+.section5-focus-border {
+    transition-property: border-color;
+    transition-duration: var(--time1);
+    transition-timing-function: var(--transitionfunction1);
+}
+
 .section5-focus-border:hover,
 .section5-focus-border:focus {
     border-color: var(--blue);
 }
 
+.section5-focus-icon {
+    transition-property: fill;
+    transition-duration: var(--time1);
+    transition-timing-function: var(--transitionfunction1);
+}
+
 .section5-focus-border:hover .section5-focus-icon,
 .section5-focus-border:focus .section5-focus-icon {
     fill: var(--blue);
+}
+
+.footer-focus-background {
+    transition-property: background-color;
+    transition-duration: var(--time1);
+    transition-timing-function: var(--transitionfunction1);
 }
 
 .footer-focus-background:hover,
@@ -130,6 +177,8 @@ address {
     padding-bottom: 25px;
     border-bottom-width: 1px;
     border-bottom-style: solid;
+
+    position: relative;
 
     background-color: var(--white);
     border-bottom-color: var(--gray-headr-border);
@@ -171,12 +220,28 @@ address {
 }
 
 .header-navigate-menu-item {
+    position: relative;
+
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
 
     color: var(--dark-title);
+}
+
+.header-navigate-menu-item:hover::after,
+.header-navigate-menu-item:focus::after {
+    position: absolute;
+    top: 45px;
+
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+
+    background-color: var(--blue);
 }
 
 .header-address {
@@ -206,6 +271,10 @@ address {
 
 .header-address-item-link-icon {
     fill: var(--dark-text);
+
+    transition-property: fill;
+    transition-duration: var(--time1);
+    transition-timing-function: var(--transitionfunction1);
 }
 
 /*Footer*/
@@ -307,9 +376,13 @@ address {
     background-image: url(../images/img-main.jpg);
     background-repeat: no-repeat;
     background-position: center;
+
 }
 
 .section1-container {
+    width: 1600px;
+    margin: 0 auto;
+
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -438,7 +511,33 @@ address {
     justify-content: space-between;
 }
 
-.section3-list-item {}
+.section3-list-item {
+    position: relative;
+}
+
+.section3-list-item-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+
+    background-color: var(--section3-background);
+}
+
+.section3-list-item-div-span {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+
+    text-transform: uppercase;
+
+    color: var(--white);
+}
 
 /*Section4*/
 .section4 {
@@ -607,8 +706,19 @@ address {
     margin: 0;
 }
 
-.section2a-list-item-figure-img {
+.section2a-list-item-figure-div {
     width: 370px;
+}
+
+.section2a-list-item-figure-div-img {
+    width: 100%;
+}
+
+.section2a-list-item-figure-div-over {
+    width: 100%;
+    height: inherit;
+
+    background-color: var(--section3-background);
 }
 
 .section2a-list-item-figcaption {
