@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Головна</title>
-    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
 
                 <ul class="header-navigate-menu">
                     <li>
-                        <a class="header-navigate-menu-item focus1" href="./index.html">Студія</a>
+                        <a class="header-navigate-menu-item current focus1" href="./index.html">Студія</a>
                     </li>
                     <li>
                         <a class="header-navigate-menu-item focus1" href="./portfolio.html">Портфоліо</a>
@@ -58,7 +58,7 @@
         <section class="section1">
             <div class="section1-container">
                 <h1 class="section1-h1">ефективі рішення для<br>вашого бізнесу</h1>
-                <button class="section1-button" type="button">Замовити послугу</button>
+                <button class="modal-open-button" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
 
@@ -477,15 +477,17 @@
         </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="butoon" class="modal-closebutton">
-                <svg class="modal-close-icon" width="18px" hight="18px">
+            <button type="butoon" class="modal-close-button" data-modal-close>
+                <svg class="modal-close-icon">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
         </div>
     </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
